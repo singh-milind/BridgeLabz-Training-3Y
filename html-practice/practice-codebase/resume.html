@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Milind Singh - Resume</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#f5f5f5;
+    color:#222;
+    line-height:1.5;
+}
+
+.container{
+    width:900px;
+    max-width:95%;
+    margin:30px auto;
+    background:white;
+    padding:35px;
+    box-shadow:0 0 15px rgba(0,0,0,.08);
+}
+
+header{
+    text-align:center;
+    border-bottom:2px solid #000;
+    padding-bottom:15px;
+    margin-bottom:20px;
+}
+
+header h1{
+    font-size:34px;
+    font-weight:800;
+    letter-spacing:1px;
+}
+
+.contact{
+    margin-top:10px;
+    font-size:14px;
+}
+
+.contact a{
+    color:#0a58ca;
+    text-decoration:none;
+}
+
+section{
+    margin-top:20px;
+}
+
+section h2{
+    font-size:22px;
+    border-bottom:2px solid #000;
+    margin-bottom:10px;
+    padding-bottom:3px;
+    text-transform:uppercase;
+}
+
+p{
+    font-size:15px;
+}
+
+.skills p{
+    margin:6px 0;
+}
+
+.project{
+    margin-bottom:20px;
+}
+
+.project-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-weight:700;
+    margin-bottom:8px;
+}
+
+.project-header a{
+    color:#0a58ca;
+    text-decoration:none;
+}
+
+ul{
+    padding-left:20px;
+}
+
+li{
+    margin-bottom:6px;
+}
+
+.education-item{
+    margin-bottom:18px;
+}
+
+.education-item h3{
+    display:flex;
+    justify-content:space-between;
+    font-size:17px;
+}
+
+.education-item p{
+    font-size:15px;
+}
+
+.awards li{
+    margin-bottom:8px;
+}
+
+@media(max-width:700px){
+
+.project-header,
+.education-item h3{
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+.container{
+    padding:20px;
+}
+
+header h1{
+    font-size:28px;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+
+<h1>Milind Singh</h1>
+
+<div class="contact">
+
+ +91-7037434110 |
+ <a href="mailto:singhmilind604@gmail.com">singhmilind604@gmail.com</a> |
+ <a href="https://www.linkedin.com/in/milind-singh-880a41314/" target="_blank">LinkedIn</a> |
+ <a href="https://github.com/singh-milind" target="_blank">GitHub</a> |
+ <a href="https://www.hackerrank.com/profile/singhmilind604" target="_blank">HackerRank</a> |
+ <a href="https://leetcode.com/u/singhmilind/" target="_blank">LeetCode</a>
+
+</div>
+
+</header>
+
+<section>
+
+<h2>Summary</h2>
+
+<p>
+
+<strong>Analytical Computer Science undergraduate</strong> with a strong foundation in
+<strong>Python, SQL, and Machine Learning.</strong>
+Proven ability to analyze large datasets and deploy predictive models,
+demonstrated by building an end-to-end
+<strong>AQI prediction application</strong> and
+interactive <strong>Power BI dashboards.</strong>
+Seeking a hands-on
+<strong>Data Analytics or Machine Learning Internship</strong>
+to translate complex data into actionable insights.
+
+</p>
+
+</section>
+
+<section class="skills">
+
+<h2>Skills</h2>
+
+<p><strong>Languages:</strong> Python, SQL, Java, C</p>
+
+<p><strong>Libraries & Tools:</strong> NumPy, Pandas, Scikit-learn, Streamlit</p>
+
+<p><strong>Visualization:</strong> Matplotlib, Seaborn, Power BI Dashboard Development, Data Visualization</p>
+
+<p><strong>Data Analysis:</strong> Data Cleaning, Exploratory Data Analysis (EDA), Reporting, Inferential Statistics, Feature Engineering</p>
+
+<p><strong>Machine Learning:</strong> Model Evaluation, Feature Importance, Statistical Learning, Predictive Analytics</p>
+
+</section>
+
+<section>
+
+<h2>Projects</h2>
+
+<div class="project">
+
+<div class="project-header">
+
+<div>
+
+Air Quality Analytics Dashboard |
+<a href="https://app.powerbi.com/view?r=eyJrIjoiNzBjMjAxMjQtOTJlMy00ZmY4LWJiYWQtNmQwY2JjMjQ2NWNlIiwidCI6ImM4MWIwOTdkLWVjNzUtNGNlMS1iODQwLWEzYTE1NzQwNzQ4MyJ9" target="_blank">
+
+Live Dashboard
+
+</a>
+
+</div>
+
+<div>January 2026</div>
+
+</div>
+
+<ul>
+
+<li>Performed <strong>data cleaning, preprocessing, and exploratory data analysis</strong> on <strong>150,000+ records</strong> to build an interactive Power BI dashboard monitoring air quality trends across <strong>30+ Indian cities.</strong></li>
+
+<li>Developed <strong>DAX measures, KPIs, and trend analysis metrics</strong> for Morning vs Midnight and Weekday vs Weekend pollutant comparisons.</li>
+
+<li>Designed interactive <strong>maps, slicers, trend charts, and custom tooltips</strong> to generate business insights.</li>
+
+<li>Benchmarked pollutant levels against <strong>CPCB and WHO standards</strong> for comparative analytical reporting.</li>
+
+</ul>
+
+</div>
+
+<div class="project">
+
+<div class="project-header">
+
+<div>
+
+Interactive AQI Predictor & Simulator |
+<a href="https://aqipredictorsystem-mxv3nnedc7ixmysc3mdhya.streamlit.app/" target="_blank">
+
+Live App
+
+</a>
+
+</div>
+
+<div>March 2026</div>
+
+</div>
+
+<ul>
+
+<li>Built and evaluated <strong>Random Forest regression models</strong> to predict <strong>PM2.5 and PM10</strong> levels across <strong>30+ Indian cities</strong> using meteorological and temporal features.</li>
+
+<li>Achieved model performance up to <strong>0.92 R² (Train)</strong> and <strong>0.79 R² (Test).</strong></li>
+
+<li>Implemented a <strong>scenario simulation module</strong> for real-time AQI prediction based on user-modified weather conditions.</li>
+
+<li>Performed <strong>feature importance and sensitivity analysis</strong> to quantify variable impact.</li>
+
+<li>Deployed the application on <strong>Streamlit Cloud</strong> with optimized model loading.</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<section class="awards">
+
+<h2>Awards & Certifications</h2>
+
+<ul>
+
+<li><strong>Data Dash Competition (Feb 2026):</strong> Cleaned, analyzed, and visualized <strong>200,000+ records</strong> within <strong>3 hours</strong> to deliver a business dashboard.</li>
+
+<li><strong>HackerRank Verified Certification:</strong> Problem Solving (Intermediate).</li>
+
+<li><strong>HackerRank Badges:</strong> 5-Star (Gold) in Python, 4-Star in SQL.</li>
+
+</ul>
+
+</section>
+
+<section>
+
+<h2>Education</h2>
+
+<div class="education-item">
+
+<h3>
+
+<span>Bachelor of Technology in Computer Science</span>
+
+<span>Expected: June 2028</span>
+
+</h3>
+
+<p><em>GLA University, Mathura</em></p>
+
+<p>CGPA: <strong>8.07 / 10</strong></p>
+
+<p>Relevant Coursework: Statistics, Linear Algebra, DBMS, DSA, OOP</p>
+
+</div>
+
+<div class="education-item">
+
+<h3>
+
+<span>Intermediate (Class XII)</span>
+
+<span>May 2023</span>
+
+</h3>
+
+<p><em>Sayyid Hamid Senior Secondary School for Boys, Aligarh</em></p>
+
+<p>77%</p>
+
+</div>
+
+<div class="education-item">
+
+<h3>
+
+<span>High School (Class X)</span>
+
+<span>May 2021</span>
+
+</h3>
+
+<p><em>Dharam Samaj Bal Mandir School, Aligarh</em></p>
+
+<p>93.4%</p>
+
+</div>
+
+</section>
+
+</div>
+
+</body>
+</html>
