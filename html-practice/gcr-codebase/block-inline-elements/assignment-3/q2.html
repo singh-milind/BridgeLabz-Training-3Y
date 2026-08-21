@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Catalog</title>
+</head>
+<body>
+
+    <h1>Online Store - Product Catalog</h1>
+
+    <!-- Product table -->
+    <table border="1">
+        <caption>Available Products</caption>
+
+        <tr>
+            <th>Product Name</th>
+            <th>Image</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Availability</th>
+        </tr>
+
+        <tr>
+            <td>Laptop</td>
+            <td>
+                <img src="laptop.jpg" alt="Laptop" width="120">
+            </td>
+            <td>High-performance laptop for students.</td>
+            <td>&#8377;60,000</td>
+            <td>In Stock</td>
+        </tr>
+
+        <tr>
+            <td>Smartphone</td>
+            <td>
+                <img src="phone.jpg" alt="Smartphone" width="120">
+            </td>
+            <td>Modern smartphone with a high-resolution camera.</td>
+            <td>&#8377;25,000</td>
+            <td>In Stock</td>
+        </tr>
+
+        <!-- Row using rowspan -->
+        <tr>
+            <td>Headphones</td>
+            <td rowspan="2">
+                <img src="headphones.jpg" alt="Headphones" width="120">
+            </td>
+            <td>Wireless headphones with noise cancellation.</td>
+            <td>&#8377;4,000</td>
+            <td>Available</td>
+        </tr>
+
+        <tr>
+            <td>Smart Watch</td>
+            <td>Smart watch with fitness tracking.</td>
+            <td>&#8377;5,000</td>
+            <td>Available</td>
+        </tr>
+
+        <!-- Row using colspan -->
+        <tr>
+            <td colspan="4">Special Offer</td>
+            <td>20% Off</td>
+        </tr>
+
+    </table>
+
+</body>
+</html>
