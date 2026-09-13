@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eef2ff;
+    color: #172033;
+}
+
+header,
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #312e81;
+    color: white;
+}
+
+main {
+    min-height: calc(100vh - 140px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+/* Flexbox centers the boxes horizontally */
+.box-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.box {
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+}
+
+/* Fixed pixel dimensions */
+.box-one {
+    width: 200px;
+    height: 150px;
+    background: #2563eb;
+}
+
+/* Percentage width and viewport height */
+.box-two {
+    width: 35%;
+    height: 20vh;
+    min-height: 140px;
+    background: #059669;
+}
+
+/* EM, min-height, max-width and overflow */
+.box-three {
+    width: 18em;
+    min-height: 12em;
+    max-width: 300px;
+    max-height: 180px;
+    overflow: auto;
+    background: #dc2626;
+}

@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* Fixed header stays at the top */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 18px;
+    text-align: center;
+    background: #111827;
+    z-index: 10;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Main sections fill the viewport */
+.gradient-section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px 30px;
+}
+
+.gradient-section div {
+    max-width: 650px;
+    padding: 35px;
+    background: rgb(0 0 0 / 35%);
+    border-radius: 15px;
+}
+
+/* Linear gradient */
+.linear {
+    background: linear-gradient(135deg, #2563eb, #9333ea, #db2777);
+
+    /* Creates a parallax-like fixed background effect */
+    background-attachment: fixed;
+}
+
+/* Radial gradient */
+.radial {
+    background: radial-gradient(circle, #f97316, #dc2626, #7f1d1d);
+}
+
+/* Fixed footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+    background: #111827;
+}
+
+footer p {
+    margin: 0;
+}

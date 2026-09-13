@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f8fafc;
+    color: #1e293b;
+}
+
+header,
+footer {
+    padding: 25px;
+    text-align: center;
+    background: #1e293b;
+    color: white;
+}
+
+header h1 {
+    margin: 0 0 8px;
+}
+
+main {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.content {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgb(0 0 0 / 10%);
+}
+
+/* ATTRIBUTE SELECTOR: selects inputs whose type is text */
+input[type="text"] {
+    border: 2px solid #2563eb;
+}
+
+/* ATTRIBUTE SELECTOR: selects links whose href starts with https */
+a[href^="https"] {
+    color: #dc2626;
+    font-weight: bold;
+}
+
+/* PSEUDO-CLASS: changes list item on hover */
+.item-list li:hover {
+    background: #dbeafe;
+}
+
+/* PSEUDO-CLASS: styles an input when it receives focus */
+input:focus {
+    outline: 3px solid #93c5fd;
+    background: #eff6ff;
+}
+
+/* PSEUDO-CLASS: selects every odd-numbered list item */
+.item-list li:nth-child(odd) {
+    color: #2563eb;
+}
+
+/* PSEUDO-ELEMENT: inserts content before the heading */
+.item-list li::before {
+    content: "→ ";
+    font-weight: bold;
+}
+
+/* PSEUDO-ELEMENT: inserts content after each secure link */
+a[href^="https"]::after {
+    content: " 🔒";
+}
+
+/* CHILD COMBINATOR (>): selects only direct li children */
+.item-list > li {
+    padding: 8px;
+}
+
+/* DESCENDANT COMBINATOR: selects all paragraphs inside the demo */
+.combinator-demo p {
+    padding: 8px;
+}
+
+/* ADJACENT SIBLING COMBINATOR (+):
+   selects the paragraph immediately after the span */
+.combinator-demo span + p {
+    background: #fef3c7;
+    border-left: 4px solid #f59e0b;
+}
+
+/* GENERAL SIBLING COMBINATOR (~):
+   selects paragraphs appearing after the span */
+.combinator-demo span ~ p {
+    font-style: italic;
+}
+
+/* Form layout */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 450px;
+}
+
+input {
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #94a3b8;
+    border-radius: 6px;
+}
+
+button {
+    width: fit-content;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 6px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.links a {
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}

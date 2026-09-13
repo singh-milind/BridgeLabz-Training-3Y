@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+header,
+footer {
+    text-align: center;
+    padding: 22px;
+    background: #0f172a;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 50%);
+}
+
+main {
+    min-height: calc(100vh - 150px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* Cards are arranged in one horizontal row */
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 250px;
+    padding: 35px 25px;
+    background: white;
+    border-radius: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.avatar {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #2563eb;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Three different shadow styles */
+.soft-shadow {
+    box-shadow: 0 5px 15px rgb(0 0 0 / 15%);
+}
+
+.hard-shadow {
+    box-shadow: 8px 8px 0 rgb(15 23 42 / 20%);
+}
+
+.deep-shadow {
+    box-shadow: 0 15px 35px rgb(0 0 0 / 25%);
+}
+
+/* Hover lifts each card using a larger shadow */
+.card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 25px 45px rgb(0 0 0 / 30%);
+}
+
+.card h2 {
+    text-shadow: 1px 1px 2px rgb(0 0 0 / 20%);
+}
