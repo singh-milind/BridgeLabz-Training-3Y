@@ -1,0 +1,100 @@
+/* Global element selector */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f8fafc;
+    color: #1e293b;
+}
+
+/* Element selector: styles all header elements */
+header {
+    padding: 30px;
+    text-align: center;
+    background: #064e3b;
+    color: white;
+}
+
+/* Element selector: styles all paragraphs */
+p {
+    line-height: 1.6;
+}
+
+/* Class selector: targets elements with class="class-heading" */
+.class-heading {
+    color: #2563eb;
+}
+
+/* Class selector */
+.highlight {
+    padding: 12px;
+    background: #fef3c7;
+    border-left: 5px solid #f59e0b;
+}
+
+/* ID selector: targets one unique element */
+#unique-heading {
+    color: #dc2626;
+}
+
+/* Attribute selector: targets links with href beginning with https */
+a[href^="https"] {
+    color: #16a34a;
+    font-weight: bold;
+}
+
+/* Descendant combinator:
+   selects every paragraph inside .combinator-box */
+.combinator-box p {
+    padding: 8px;
+}
+
+/* Child combinator (>):
+   selects only direct paragraph children */
+.combinator-box > p {
+    background: #dbeafe;
+}
+
+/* Adjacent sibling combinator (+):
+   selects the paragraph immediately after the nested div */
+.combinator-box div + p {
+    border-left: 5px solid #7c3aed;
+}
+
+/* General sibling combinator (~):
+   selects all paragraphs after the nested div */
+.combinator-box div ~ p {
+    font-style: italic;
+}
+
+/* Class selector for list */
+.items {
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+}
+
+.items li {
+    padding: 8px;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #064e3b;
+    color: white;
+}
+
+/* Main content alignment */
+.selector-demo {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
+}
